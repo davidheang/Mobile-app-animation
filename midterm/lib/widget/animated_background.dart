@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class AnimatedBackground extends StatefulWidget {
-  final String imagePath; // Path to the image asset
-  final Duration duration; // Duration of the left-to-right animation
-  final double imageWidth; // Width of the image
-  final double imageHeight; // Height of the image
+  final String imagePath; 
+  final Duration duration;
+  final double imageWidth;
+  final double imageHeight;
 
   const AnimatedBackground({
     required this.imagePath,
@@ -18,7 +18,7 @@ class AnimatedBackground extends StatefulWidget {
 }
 
 class _AnimatedBackgroundState extends State<AnimatedBackground> {
-  bool isOnRight = false; // Track if the image is on the right side
+  bool isOnRight = false; 
 
   @override
   void initState() {
@@ -27,7 +27,6 @@ class _AnimatedBackgroundState extends State<AnimatedBackground> {
   }
 
   void _startAnimation() {
-    // Toggle the image position every time the animation completes
     setState(() {
       isOnRight = !isOnRight;
     });

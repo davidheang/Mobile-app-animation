@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           body: Stack(children: [
             Positioned(
                 top: -60,
-                left: 100,
+                left: 300,
                 child: SizedBox(
                   width: (MediaQuery.of(context).size.width + 300),
                   height: (MediaQuery.of(context).size.width - 300) / 2,
